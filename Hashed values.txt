@@ -1,0 +1,21 @@
+TASK 1: MESSAGE DIGEST:
+"Hello, World!" HASHED WITH MD5 IS: 65a8e27d8879283831b664bd8b7f0ad4
+"Hello, World!" HASHED WITH SHA-1 IS: 0a0a9f2a6772942557ab5355d76af442f8f65e01
+"Hello, World!" HASHED WITH SHA-256 IS: dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f
+
+TASK 2: SECURE RANDOM
+"Hello, World!" HASHED WITH SHA1PRNG IS: 5a20dd2421f633d21da85b8911f9f376
+"Hello, World!" HASHED WITH DRBG IS: d9c9c8b0a6de2b91625772afbd2b47df
+"Hello, World!" HASHED WITH Windows-PRNG IS: e774fcf6177e929f12755381c71f02de
+
+TASK 3: CORRECT AND INCORRECT HASH MAPS:
+Mira the cat hash is 526671191
+Shadow the cat hash is -1448273181
+Vestra the cat hash is -1922279601
+Hurrem the cat hash is -577233548
+Mira the cat hash is 526671191
+Mira the cat hash is 17
+Shadow the cat hash is 17
+Vestra the cat hash is 17
+Hurrem the cat hash is 17
+Mira the cat hash is 17

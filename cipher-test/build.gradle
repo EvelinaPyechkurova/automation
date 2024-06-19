@@ -1,9 +1,30 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.evelina.pyechkurova'
 version '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.evelina.pyechkurova.testcipher.CipherTest'
+}
+
+tasks.register('runCipherTest') {
+    group = "Verification"
+    description = "Task to run CipherTest tests"
+    dependsOn 'classes'
+    doLast {
+        javaexec {
+            main = 'com.evelina.pyechkurova.testcipher.CipherTest'
+            classpath = sourceSets.main.runtimeClasspath
+        }
+    }
+}
+
+tasks.named('build') {
+    dependsOn 'runCipherTest'
+}
 
 repositories {
     mavenCentral()

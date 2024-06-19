@@ -14,6 +14,25 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
+tasks.register('CheckFileExistence') {
+    group = "Custom"
+    description = "Task to check if Cipher file from Java Library exists."
+    def filePath = 'src/main/java/com/evelina/pyechkurova/cipherlibrary/Cipher.java'
+    doLast {
+        def file = file(filePath)
+        if (file.exists()) {
+            print("File ${filePath} exists.")
+        }else{
+            println "File ${filePath} not found."
+            throw new GradleException("File not found: ${filePath}")
+        }
+    }
+}
+
+tasks.named('build') {
+    dependsOn 'CheckFileExistence'
+}
+
 test {
     useJUnitPlatform()
 }

@@ -1,0 +1,2 @@
+rootProject.name = 'CeasarCipherGradle'
+include('cipher-library', 'cipher-core', 'cipher-test')

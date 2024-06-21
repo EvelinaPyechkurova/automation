@@ -19,6 +19,7 @@ public class Cat {
         this.owner = owner;
         this.ownerAge = ownerAge;
         this.healthCondition = healthCondition;
+        RangeChecker.checkMinMaxValue(this);
     }
 
     public String getName() {

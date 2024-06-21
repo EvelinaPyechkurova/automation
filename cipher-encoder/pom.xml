@@ -26,7 +26,7 @@
 
                 <executions>
                     <execution>
-                        <id>copy-resources-to-module1</id>
+                        <id>copy-resources-to-cipher-decoder</id>
                         <phase>compile</phase>
                         <goals>
                             <goal>copy-resources</goal>
